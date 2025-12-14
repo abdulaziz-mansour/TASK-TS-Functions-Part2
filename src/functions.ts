@@ -8,7 +8,18 @@
  */
 function greet(name: string): void {
   // Your code here
+    console.log("Hello " + name);
+  
 }
+greet("Hamza");
+
+
+
+
+
+
+
+
 
 /**
  * isOdd(n):
@@ -20,10 +31,21 @@ function greet(name: string): void {
  * isOdd(10) -> false
  */
 function isOdd(n: number): boolean {
-  // Your code here
 
-  return false; // replace false with what you see is fit
+  return n % 2 !== 0;
 }
+console.log(isOdd(7));
+console.log(isOdd(10));
+
+
+
+
+
+
+
+
+
+
 
 /**
  * oddsSmallerThan(n):
@@ -36,9 +58,22 @@ function isOdd(n: number): boolean {
  */
 function oddsSmallerThan(n: number): number {
   // Your code here
+  return Math.floor(n / 2);
 
   return -1; // replace -1 with what you see is fit
 }
+console.log(oddsSmallerThan(7));
+console.log(oddsSmallerThan(15));
+
+
+
+
+
+
+
+
+
+
 
 /**
  * squareOrDouble(n):
@@ -52,8 +87,21 @@ function oddsSmallerThan(n: number): number {
  */
 function squareOrDouble(n: number): number {
   // Your code here
-
+  if (n % 2 !== 0) {
+    return n * n;
+  } else {
+    return n * 2;
+  }
   return -1; // replace -1 with what you see is fit
 }
+console.log(squareOrDouble(16));
+console.log(squareOrDouble(9));
+
+
+
+
+
+
+
 
 export { greet, isOdd, oddsSmallerThan, squareOrDouble };
